@@ -1,0 +1,69 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.kangndotextblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.kangndocontent-layout, .kangndocontent-layout-row, .kangndolayout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.kangndolayout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.kangndosearch>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.kangndosearch div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.kangndosearch>input[type="text"] 
+{
+   margin :0;
+}
+
+.kangndopostheadericons span{
+   zoom: 1;
+}
+.kangndopostcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.kangndocontent 
+{
+   width: auto;
+   float:none;
+}
+
